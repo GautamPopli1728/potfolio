@@ -7,6 +7,7 @@ import {
   MapPinIcon,
   PaperAirplaneIcon
 } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -42,7 +43,7 @@ export default function Contact() {
         >
           <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Let's discuss your project and see how I can help bring your ideas to life.
+            Let&apos;s discuss your project and see how I can help bring your ideas to life.
           </p>
         </motion.div>
 
@@ -114,9 +115,11 @@ export default function Contact() {
                     className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors group"
                     whileHover={{ y: -5 }}
                   >
-                    <img
-                      src={`/github-icon.svg`}
-                      alt={"social"}
+                    <Image
+                      src="/github-icon.svg"
+                      alt="GitHub"
+                      width={24}
+                      height={24}
                       className="w-6 h-6 text-blue-600 group-hover:text-white"
                     />
                   </motion.a>
@@ -129,9 +132,11 @@ export default function Contact() {
                     className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors group"
                     whileHover={{ y: -5 }}
                   >
-                    <img
-                      src={`/linkedin-icon.svg`}
-                      alt={"linkedin"}
+                    <Image
+                      src="/linkedin-icon.svg"
+                      alt="LinkedIn"
+                      width={24}
+                      height={24}
                       className="w-6 h-6 text-blue-600 group-hover:text-white"
                     />
                   </motion.a>
