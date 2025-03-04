@@ -50,7 +50,7 @@ export default function Testimonials() {
         >
           <h2 className="text-3xl font-bold mb-4">What Clients Say</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Hear from the people I've worked with on various projects
+            Hear from the people I&apos;ve worked with on various projects
           </p>
         </motion.div>
 

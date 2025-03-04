@@ -53,7 +53,7 @@ export default function Skills() {
         >
           <h2 className="text-4xl font-bold mb-4">Skills & Expertise</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            With 5+ years of experience in web development, I've mastered various technologies and tools
+            With 5+ years of experience in web development, I&apos;ve mastered various technologies and tools
           </p>
         </motion.div>
 
