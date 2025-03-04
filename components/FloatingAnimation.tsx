@@ -1,17 +1,23 @@
 'use client';
 import { motion } from 'framer-motion';
+import { ReactNode } from 'react';
 
-export default function FloatingAnimation({ children, delay = 0 }) {
+interface FloatingAnimationProps {
+  children: ReactNode;
+  delay?: number;
+}
+
+export default function FloatingAnimation({ children, delay = 0 }: FloatingAnimationProps) {
   return (
     <motion.div
       animate={{
-        y: [0, -20, 0],
+        y: [0, -10, 0],
       }}
       transition={{
-        duration: 6,
-        delay,
+        duration: 2,
         repeat: Infinity,
         repeatType: "reverse",
+        delay,
       }}
     >
       {children}
