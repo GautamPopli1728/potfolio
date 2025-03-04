@@ -1,7 +1,8 @@
 'use client';
 import { motion } from 'framer-motion';
+import type { SkillCardProps } from '@/types';
 
-export function SkillCard({ skill, index }) {
+export function SkillCard({ skill, index }: SkillCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, x: -20 }}
