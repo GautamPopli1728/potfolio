@@ -1,7 +1,13 @@
 'use client';
 import { motion } from 'framer-motion';
+import { ReactNode } from 'react';
 
-export function AnimatedCard({ children, index = 0 }) {
+interface AnimatedCardProps {
+  children: ReactNode;
+  index?: number;
+}
+
+export function AnimatedCard({ children, index = 0 }: AnimatedCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
